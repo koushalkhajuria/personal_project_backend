@@ -102,7 +102,7 @@ app.post('/signup', async(req,res) => {
 
 
 
-app.listen(3000,"127.0.0.1",(err) => {
+app.listen(port,"127.0.0.1",(err) => {
     dbConnect()
     if(err) throw err;
     console.log(`Server is running on port ${3000}`)
